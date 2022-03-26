@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="56.0" layoutY="147.0" prefHeight="35.0" prefWidth="135.0" text="Prisijungimo vardas" />
+            <Label layoutX="56.0" layoutY="179.0" text="Slaptažodis" />
+            <Label layoutX="242.0" layoutY="71.0" prefWidth="150.0" text="Knygos">
+               <font>
+                  <Font size="31.0" />
+               </font></Label>
+            <Label layoutX="56.0" layoutY="216.0" text="Patvirtinti slaptažodį" />
+            <Label layoutX="56.0" layoutY="258.0" text="El. paštas" />
+            <PasswordField fx:id="rePassword" layoutX="218.0" layoutY="175.0" />
+            <PasswordField fx:id="reConfirmPassword" layoutX="218.0" layoutY="212.0" />
+            <TextField fx:id="reUsername" layoutX="218.0" layoutY="143.0" />
+            <TextField fx:id="reEmail" layoutX="218.0" layoutY="254.0" />
+            <Label fx:id="reLoginStatus" layoutX="136.0" layoutY="294.0" prefHeight="25.0" prefWidth="355.0" />
+            <Button fx:id="reRegister" layoutX="258.0" layoutY="330.0" mnemonicParsing="false" text="Prisijungti" />
+         </children></Pane>
+   </children>
+</GridPane>
